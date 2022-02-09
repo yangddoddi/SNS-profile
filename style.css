@@ -1,0 +1,71 @@
+:root {
+  --color-background: #f7f9fc;
+  --color-jordy-blue: #6fbaf8;
+
+  --font-xsmall: 12px;
+  --font-small: 14px;
+  --font-base: 16px;
+  --font-large: 18px;
+  --font-xlarge: 20px;
+
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+}
+
+* {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+
+p {
+  margin: 0px;
+  font-size: var(--font-small);
+}
+
+h3 {
+  font-size: var(--font-xlarge);
+  margin-bottom: 10px;
+}
+
+h4 {
+  font-size: var(--font-large);
+}
+
+body {
+  background-color: var(--color-background);
+  font-family: sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.backjordyblue {
+  background-color: var(--color-jordy-blue);
+}
+
+.fontjordyblue {
+  color: var(--color-jordy-blue);
+}
+
+.avatar img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.skills__item:hover {
+  transition: 200ms all ease-in;
+  font-size: var(--font-base);
+}
+
+.findme__logo {
+  color: var(--color-jordy-blue);
+  font-size: 90px;
+}
+
+.findme .btn {
+  width: 20%;
+}
