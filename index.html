@@ -16,11 +16,11 @@
 </head>
 
 <body>
-    <div class="container m-auto mt-4 p-0">
-        <div class="profile row shadow-sm p-5 mb-5 bg-body rounded">
-            <div class="profile row flex-row align-items-end">
-                <div class="avatar  col-4 rounded-circle">
-                    <img src="img/5D1E0359-AAA6-4D0B-B2E2-E6A3919E2F32_1_105_c.jpeg" alt="avatar">
+    <div class="container m-auto mt-4 p-5 p-md-1 ">
+        <div class="profile--container row shadow-sm p-5 p-md-2 mb-5 bg-body rounded flex-md-row align-items-md-center">
+            <div class="profile row align-items-end col-md-7">
+                <div class="avatar  col-4 col-md-3 rounded-circle align-self-center">
+                    <img src="img/5D1E0359-AAA6-4D0B-B2E2-E6A3919E2F32_1_105_c.jpeg" alt="avatar" class="">
                 </div>
                 <div class="name col-8">
                     <h2 class="mb-0 fs-2">Yang-eunchan</h2>
@@ -29,55 +29,83 @@
                     <button type="button" class="btn text-white backjordyblue">Contact</button>
                 </div>
             </div>
-            <div class="information row mt-5 pt-4 mb-2">
-                <h4 class="col-4 mb-4">Location</h4>
-                <h4 class="col-8">고담 대구</h4>
-                <h4 class="col-4 mb-4">age</h4>
-                <h4 class="col-8">4살</h4>
-                <h4 class="col-4 mb-4">Experience</h4>
-                <h4 class="col-8">신입</h4>
-                <h4 class="col-4">school</h4>
-                <h4 class="col-8">응애 어린이집</h4>
+            <div class="verticaLline col-lg-1 border-start"></div>
+            <div class="information row mt-5 mt-md-3 pt-4 pt-md-0 mb-2 col-md-4 vr-4 border-md-start">
+                <h4 class="col-4 col-md-5 mb-4 mb-md-3">Location</h4>
+                <h4 class="col-8 col-md-7">고담 대구</h4>
+                <h4 class="col-4 col-md-5 mb-4 mb-md-3">age</h4>
+                <h4 class="col-8 col-md-7">4살</h4>
+                <h4 class="col-4 col-md-5 mb-4 mb-md-3">Experience</h4>
+                <h4 class="col-8 col-md-7">신입</h4>
+                <h4 class="col-4 col-md-5">school</h4>
+                <h4 class="col-8 col-md-7">응애 어린이집</h4>
             </div>
         </div>
         <div class="menubar mb-5">
-            <div class="ms-4"><span class="menubar__Profile fontjordyblue">Profile</span></div>
-            <div class="progress row" style="height: 2px;">
-                <div class="progress-bar backjordyblue" role="progressbar" style="width: 20%" aria-valuenow="50"
+            <div><span class="menubar__Profile fontjordyblue">Profile</span></div>
+            <div class="progress" style="height: 2px; ">
+                <div class="progress-bar backjordyblue" role="progressbar" style="width: 120px" aria-valuenow="50"
                     aria-valuemin="0" aria-valuemax="100"></div>
             </div>
         </div>
-        <div class="works row shadow-sm p-5 mb-5 bg-body rounded">
-            <h3>WORKS</h3>
-            <p>Landing page design</p>
-            <p>SNS page design</p>
-            <p>portfolio page design</p>
-            <p>Born cute</p>
-        </div>
-        <div class="about row shadow-sm p-5 mb-5 bg-body rounded">
-            <h3>ABOUT</h3>
-            <p>I haven't learned a lot of skills yet. However, I will study harder and try to become a great developer
-                in the future.The technical stacks described below are the skills I want to master in the near future.
-            </p>
-            <div class="skills mt-5 pt-3 border-top">
-                <h3>SKILLS</h3>
-                <span class="skills__item badge border border-secondary rounded-pill text-dark">HTML5</span>
-                <span class="skills__item badge border border-secondary rounded-pill text-dark">Java Script</span>
-                <span class="skills__item badge border border-secondary rounded-pill text-dark">CSS3</span>
-                <span class="skills__item badge border border-secondary rounded-pill text-dark">React</span>
-                <span class="skills__item badge border border-secondary rounded-pill text-dark">Nod.js</span>
-                <span class="skills__item badge border border-secondary rounded-pill text-dark">git</span>
+        <div class="bottomContainer">
+            <div class="works shadow-sm p-5 mb-5 bg-body rounded">
+                <h3>WORKS</h3>
+                <p>Landing page design</p>
+                <p>SNS page design</p>
+                <p>portfolio page design</p>
+                <p>Born cute</p>
+            </div>
+            <div class="about shadow-sm p-5 mb-5 bg-body rounded">
+                <h3>ABOUT</h3>
+                <p>I haven't learned a lot of skills yet. However, I will study harder and try to become a great
+                    developer
+                    in the future.The technical stacks described below are the skills I want to master in the near
+                    future.
+                </p>
+                <div class="skills mt-5 pt-3 border-top">
+                    <h3>SKILLS</h3>
+                    <span class="skills__item badge border border-secondary rounded-pill text-dark">HTML5</span>
+                    <span class="skills__item badge border border-secondary rounded-pill text-dark">Java Script</span>
+                    <span class="skills__item badge border border-secondary rounded-pill text-dark">CSS3</span>
+                    <span class="skills__item badge border border-secondary rounded-pill text-dark">React</span>
+                    <span class="skills__item badge border border-secondary rounded-pill text-dark">Nod.js</span>
+                    <span class="skills__item badge border border-secondary rounded-pill text-dark">git</span>
+                </div>
+            </div>
+            <div class="findme shadow-sm p-5 p-md-2 mb-5 bg-body rounded text-center">
+                <i class="findme__logo fa-solid fa-fire-flame-simple mb-2"></i>
+                <p>Find me at Linkedout.com</p>
+                <button type="button" class="btn mt-4 mb-2 text-white backjordyblue m-auto">Sign Up</button>
+                <a href="#">
+                    <p class="jordy">Already a member?</p>
+                </a>
+                <div class="knowpeople flex-column">
+                    <p>People You Might Know</p>
+                    <div class="knowpeople__item border-top mt-3 pt-3 mb-3">
+                        <img src="img/5D1E0359-AAA6-4D0B-B2E2-E6A3919E2F32_1_105_c.jpeg" alt="people_avatar">
+                        <div class="knowpeople__item__info">
+                            <span class="knowpeople__item__info--name">Kimbabo</span>
+                            <span class="knowpeople__item__info--job">developer</span>
+                            <i class="fas fa-map-marker-alt fontjordyblue">
+                                seoul</i>
+                        </div>
+                    </div>
+                    <div class="knowpeople__item">
+                        <img src="img/5D1E0359-AAA6-4D0B-B2E2-E6A3919E2F32_1_105_c.jpeg" alt="people_avatar">
+                        <div class="knowpeople__item__info">
+                            <span class="knowpeople__item__info--name">Yangbabo</span>
+                            <span class="knowpeople__item__info--job">developer</span>
+                            <i class="fas fa-map-marker-alt fontjordyblue">
+                                busan</span></i>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="findme row shadow-sm p-5 mb-5 bg-body rounded text-center">
-            <i class="findme__logo fa-solid fa-fire-flame-simple mb-2"></i>
-            <p>Find me at Linkedout.com</p>
-            <button type="button" class="btn mt-4 mb-2 text-white backjordyblue m-auto">Sign Up</button>
-            <a href="#">
-                <p class="jordy">Already a member?</p>
-            </a>
 
-        </div>
+    </div>
+    </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"

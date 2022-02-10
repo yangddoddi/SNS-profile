@@ -30,7 +30,7 @@ h3 {
 }
 
 h4 {
-  font-size: var(--font-large);
+  font-size: var(--font-base);
 }
 
 body {
@@ -56,9 +56,22 @@ a {
   border-radius: 50%;
 }
 
+.verticaLline {
+  height: 100%;
+  padding-top: 100px;
+}
+
+.menubar__Profile {
+  margin-left: 38px;
+}
+
 .skills__item:hover {
   transition: 250ms all ease-in;
   font-size: var(--font-small);
+}
+
+.findme {
+  position: relative;
 }
 
 .findme__logo {
@@ -67,5 +80,95 @@ a {
 }
 
 .findme .btn {
-  width: 20%;
+  width: 100px;
+  height: 40px;
+}
+
+.knowpeople {
+  display: none;
+  position: absolute;
+  top: 110%;
+  width: 100%;
+}
+
+.knowpeople__item {
+  display: flex;
+  flex-direction: row;
+}
+
+.knowpeople__item__info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.knowpeople__item__info--name {
+  font-weight: var(--font-weight-bold);
+}
+
+.knowpeople__item img {
+  width: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.knowpeople__item i {
+  font-size: 8px;
+}
+
+.knowpeople__item {
+  font-size: var(--font-xsmall);
+}
+
+.knowpeople__item__info--job {
+  color: grey;
+}
+
+@media screen and (min-width: 992px) {
+  .bottomContainer {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin-bottom: 150px;
+  }
+
+  .works {
+    width: 25%;
+    height: 70%;
+    margin-right: 10px;
+  }
+
+  .about {
+    width: 50%;
+    height: 110%;
+  }
+
+  .skills {
+    margin-bottom: 100px;
+  }
+
+  .findme {
+    width: 25%;
+    margin-left: 10px;
+    height: 250px;
+  }
+
+  .knowpeople {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .verticaLline {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .verticaLline {
+    display: none;
+  }
 }
